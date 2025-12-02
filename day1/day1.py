@@ -10,10 +10,7 @@ for line in lines:
         dial -= moves
     if rotation_direction == 'r':
         dial += moves
-    if dial >= 100:
-        dial %= 100
-    if dial < 0:
-        dial %= 100
+    dial %= 100
     if dial == 0:
         cont += 1
 
